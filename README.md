@@ -79,17 +79,47 @@ It is a unique, AI-driven DevOps tool designed for Linux environments. It uses m
 - Ansible installed.
 
 ### Quick Start
-1. Clone the repo: ``` git clone https://github.com/yourusername/AI-DevOps-Predictor.git cd AI-DevOps-Predicton
-2. Backend Setup: cd backend python -m venv venv source venv/bin/activate pip install -r requirements.txt python app.py
- Backend runs on `http://localhost:5000`.
+1. Clone the repo:
 
-3. Frontend Setup:cd ../frontend npm install npm start
+       git clone
+       https://github.com/yourusername/Logs_Guard-AI.git
+       cd AI-DevOps-Predicton
+2. Backend Setup:
+   
+       cd backend python -m venv venv
+       source venv/bin/activate
+       pip install -r requirements.txt
+       python app.py
+    Backend runs on `http://localhost:5000`.
+
+3. Frontend Setup:
+
+       cd ../frontend npm
+       install npm start
    Frontend runs on `http://localhost:3000`.
 
-4. Train ML Model:cd ../backend python ml_model.py
-5. Docker Build:cd ../scripts/docker docker build -t backend-image -f Dockerfile.backend ../../backend docker build -t frontend-image -f Dockerfile.frontend ../../frontend
-6. Kubernetes Deployment:kubectl apply -f ../../scripts/k8s/deployment-backend.yaml kubectl apply -f ../../scripts/k8s/deployment-frontend.yaml
-7. Ansible Remediation Example:ansible-playbook -i scripts/ansible/inventory.ini scripts/ansible/playbook_fix_server.yml
+4. Train ML Model:
+
+       cd ../backend
+       python ml_model.py
+   
+5. Docker Build:
+
+       cd ../scripts/docker
+       docker build -t backend-image -f Dockerfile.backend ../../backend
+       docker build -t frontend-image -f Dockerfile.frontend ../../frontend
+
+6. Run Docker Containers:
+
+       docker run -d -p 5000:5000 --name aiops-backend aiops-backend:latest
+       docker run -d -p 3000:3000 --name aiops-frontend aiops-frontend:latest
+   
+7. Kubernetes Deployment:
+   
+       kubectl apply -f ../../scripts/k8s/deployment-backend.yaml
+       kubectl apply -f ../../scripts/k8s/deployment-frontend.yaml
+9. Ansible Remediation (To automate server fixes):
+        ansible-playbook -i scripts/ansible/inventory.ini scripts/ansible/playbook_fix_server.yml
 
 ## Usage
 - Upload Linux logs via the dashboard.
@@ -108,5 +138,3 @@ Fork and PR! Ensure code is error-free and tested on Linux.
 
 ## License
 MIT License. See `LICENSE`.
-
-This project is error-free, tested thrice on Ubuntu, and ready for production. Deploy it to showcase your skills!
