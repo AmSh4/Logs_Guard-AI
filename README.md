@@ -1,63 +1,55 @@
 # Logs_Guard-AI
-It is an AI-powered DevOps tool that analyzes Linux server logs to detect anomalies and predict failures. It integrates ML models, automated fixes via Ansible, containerization with Docker, and orchestration using Kubernetes—providing a full-stack solution for predictive maintenance.
+It is a unique, AI-driven DevOps tool designed for Linux environments. It uses machine learning to analyze server logs for anomaly detection, predicting potential failures before they occur. This predictive maintenance approach is rare in open-source tools, combining DevOps practices with AI to optimize Linux cluster management.
 
 ## Project Structure
 
-AI-DevOps-Predictor/
-├── README.md
-├── backend/
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── ml_model.py
-│   ├── anomaly_detector.py
-│   ├── utils.py
-│   └── data_processor.py
-├── frontend/
-│   ├── package.json
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   ├── components/
-│   │   │   ├── Dashboard.js
-│   │   │   ├── LogUploader.js
-│   │   │   └── PredictionResults.js
-│   │   └── styles/
-│   │       └── dashboard.css
-│   └── public/
-│       └── index.html
-├── datasets/
-│   ├── sample_logs/
-│   │   ├── normal_log.txt
-│   │   ├── anomaly_log_1.txt
-│   │   ├── anomaly_log_2.txt
-│   │   └── training_data.csv
-├── scripts/
-│   ├── ansible/
-│   │   ├── playbook_fix_server.yml
-│   │   └── inventory.ini
-│   ├── docker/
-│   │   ├── Dockerfile.backend
-│   │   └── Dockerfile.frontend
-│   └── k8s/
-│       ├── deployment-backend.yaml
-│       └── deployment-frontend.yaml
-├── .github/
-│   └── workflows/
-│       └── ci-cd.yml
-├── docs/
-│   ├── architecture.md
-│   └── user_guide.md
-└── LICENSE
+    Logs_Guard-AI/
+    ├── README.md
+    ├── backend/
+    │   ├── app.py
+    │   ├── requirements.txt
+    │   ├── ml_model.py
+    │   ├── anomaly_detector.py
+    │   ├── utils.py
+    │   └── data_processor.py
+    ├── frontend/
+    │   ├── package.json
+    │   ├── src/
+    │   │   ├── App.js
+    │   │   ├── index.js
+    │   │   ├── components/
+    │   │   │   ├── Dashboard.js
+    │   │   │   ├── LogUploader.js
+    │   │   │   └── PredictionResults.js
+    │   │   └── styles/
+    │   │       └── dashboard.css
+    │   └── public/
+    │       └── index.html
+    ├── datasets/
+    │   ├── sample_logs/
+    │   │   ├── normal_log.txt
+    │   │   ├── anomaly_log_1.txt
+    │   │   ├── anomaly_log_2.txt
+    │   │   └── training_data.csv
+    ├── scripts/
+    │   ├── ansible/
+    │   │   ├── playbook_fix_server.yml
+    │   │   └── inventory.ini
+    │   ├── docker/
+    │   │   ├── Dockerfile.backend
+    │   │   └── Dockerfile.frontend
+    │   └── k8s/
+    │       ├── deployment-backend.yaml
+    │       └── deployment-frontend.yaml
+    ├── .github/
+    │   └── workflows/
+    │       └── ci-cd.yml
+    ├── docs/
+    │   ├── architecture.md
+    │   └── user_guide.md
+    └── LICENSE
 
-
-
-
-
-
-## Overview
-AI-DevOps-Predictor is a unique, AI-driven DevOps tool designed for Linux environments. It uses machine learning to analyze server logs for anomaly detection, predicting potential failures before they occur. This predictive maintenance approach is rare in open-source tools, combining DevOps practices with AI to optimize Linux cluster management.
-
-The tool features:
+## The tool features:
 - **Frontend**: A modern React-based dashboard for uploading logs, viewing predictions, and triggering automated fixes.
 - **Backend**: Python Flask API integrated with scikit-learn for ML-based anomaly detection.
 - **AI Component**: A custom ML model trained on Linux syslog datasets to detect anomalies like high CPU spikes or disk errors.
