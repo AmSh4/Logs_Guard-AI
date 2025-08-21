@@ -109,16 +109,12 @@ It is a unique, AI-driven DevOps tool designed for Linux environments. It uses m
        docker build -t backend-image -f Dockerfile.backend ../../backend
        docker build -t frontend-image -f Dockerfile.frontend ../../frontend
 
-6. Run Docker Containers:
-
-       docker run -d -p 5000:5000 --name aiops-backend aiops-backend:latest
-       docker run -d -p 3000:3000 --name aiops-frontend aiops-frontend:latest
-   
-7. Kubernetes Deployment:
+6. Kubernetes Deployment:
    
        kubectl apply -f ../../scripts/k8s/deployment-backend.yaml
        kubectl apply -f ../../scripts/k8s/deployment-frontend.yaml
-9. Ansible Remediation (To automate server fixes):
+7. Ansible Remediation (To automate server fixes):
+   
         ansible-playbook -i scripts/ansible/inventory.ini scripts/ansible/playbook_fix_server.yml
 
 ## Usage
