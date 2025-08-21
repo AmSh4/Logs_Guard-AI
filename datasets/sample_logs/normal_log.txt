@@ -1,0 +1,2 @@
+Aug 19 10:00:00 server kernel: CPU usage normal.
+Aug 19 10:01:00 server systemd: Service started.
