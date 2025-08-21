@@ -56,12 +56,11 @@ It is a unique, AI-driven DevOps tool designed for Linux environments. It uses m
 - **DevOps Integration**: Ansible playbooks for automated remediation, Docker for containerization, and Kubernetes manifests for orchestration. CI/CD pipeline via GitHub Actions.
 - **Datasets**: Sample Linux log files and a CSV for model training.
 
-This project showcases advanced skills in AI, DevOps, full-stack development, and Linux system administration. It's designed to be production-ready, error-free, and scalable—perfect for attracting recruiters in AI-DevOps roles.
 
-## Why Unique?
+## Why This?
 - Focuses on predictive analytics for Linux-specific issues (e.g., kernel panics, SELinux errors), which is underrepresented in tools like Prometheus or ELK stack.
 - Integrates AI not just for monitoring but for proactive IaC (Infrastructure as Code) suggestions via Ansible.
-- Rare combination: ML-driven failure prediction with automated deployment fixes in a single repo.
+- **Rare combination**: ML-driven failure prediction with automated deployment fixes in a single repo.
 
 ## Tech Stack
 - **Frontend**: React.js with CSS for an attractive, responsive UI.
@@ -80,7 +79,7 @@ This project showcases advanced skills in AI, DevOps, full-stack development, an
 - Ansible installed.
 
 ### Quick Start
-1. Clone the repo: git clone https://github.com/yourusername/AI-DevOps-Predictor.git cd AI-DevOps-Predicton
+1. Clone the repo: ``` git clone https://github.com/yourusername/AI-DevOps-Predictor.git cd AI-DevOps-Predicton
 2. Backend Setup: cd backend python -m venv venv source venv/bin/activate pip install -r requirements.txt python app.py
  Backend runs on `http://localhost:5000`.
 
